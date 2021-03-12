@@ -54,6 +54,15 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+    buildscript {
+        repositories {
+    // Check that you have the following line (if not, add it):
+        google()  // Google's Maven repository
+        }
+        dependencies {
+    // Add this line
+    classpath 'com.google.gms:google-services:4.3.5'
+  }
 }
 
 flutter {
@@ -62,5 +71,7 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    
     implementation 'com.android.support:multidex:1.0.3'
+    classpath 'com.google.gms:google-services:4.3.5'
 }

@@ -9,6 +9,7 @@ class SignInPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text('login page')),
       body: Column(
         children: [
           TextField(
